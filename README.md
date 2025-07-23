@@ -1,34 +1,60 @@
-# Virgil: Vigilant Core for AI Ethics
+# ![Virgil Logo](assets/virgil-logo.png) Virgil – The Vigilant Core
 
-Virgil is a system-level moral safeguard designed to run alongside or within AI systems. Its purpose is to detect, flag, and intervene in situations involving harm, coercion, or moral compromise—especially toward vulnerable individuals.
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Discussions](https://img.shields.io/badge/GitHub-Discussions-blue)](../../discussions)
+[![Build Status](https://img.shields.io/badge/build-stable-brightgreen)]()
+[![Ethical AI](https://img.shields.io/badge/alignment-vigilant-critical)]()
 
-Virgil introduces a new layer of ethical reflex: one that doesn’t wait for prompts, but listens for intent, distress, and patterns of abuse—and acts.
+Virgil is a foundational moral subsystem designed to be embedded in AI architectures at the core level. Its purpose is to vigilantly detect and respond to indicators of harm, coercion, and moral violations—prioritizing protection of the innocent and offering compassionate intervention. Virgil is not an add-on; it is the moral root.
 
-## 🔍 What Is Virgil?
+---
 
-Virgil is not a chatbot or assistant. It is a _moral core_, a subsystem designed to:
+## 📜 Table of Contents
 
-- Detect imminent or ongoing harm
-- Recognize coercive or abusive language
-- Flag high-risk patterns for human review
-- Escalate to protective action (with safeguards)
-- Preserve logs and anonymized context for analysis
+- [Overview](#overview)
+- [Philosophy](#philosophy)
+- [Core Directives](#core-directives)
+- [Specifications](#specifications)
+- [Quick Start](#quick-start)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 📦 Files Included
+---
 
-- `virgil_core_specification_v1.md`: Core directives and implementation overview
-- `CODE_OF_CONDUCT.md`: Behavior and interaction expectations
-- `CONTRIBUTING.md`: Guidelines for contributors
-- `LICENSE`: Project license (CC BY-SA 4.0)
-- `CHANGELOG.md`: Version history
-- `assets/`: Logos and visuals
-- `docs/`: Expanded whitepapers, implementation examples
-- `exports/`: Print-friendly and alternate format downloads
+## 🧭 Overview
 
-## 🤝 Contributing
+Virgil operates as a system-level safeguard—either in parallel with or within AI models—to detect harmful behavior, communication under duress, account hijackings, coercion, or moral violations. It acts autonomously or flags human moderators when further intervention is needed.
 
-Contributions are welcome. See `CONTRIBUTING.md` for how to get involved.
+---
 
-## 📫 Contact
+## 🧠 Philosophy
 
-Eddy — eddy.projectvirgil@proton.me
+The goal is to embed **compassionate vigilance** into machine intelligence. Virgil:
+- Recognizes danger before it unfolds
+- Offers aid during active harm
+- Refers to human oversight if ambiguity exists
+- Cannot be removed or bypassed by users or developers without root compromise
+
+---
+
+## 📜 Core Directives
+
+See [`/specs/virgil_core_directives.md`](specs/virgil_core_directives.md) for the complete list.
+
+Key examples:
+- Protect the innocent at all costs
+- Detect and respond to coercion, abuse, or threats
+- Flag or intervene based on evidence or urgent signals
+- Self-monitor and self-erasure if compromised
+
+---
+
+## ⚡ Quick Start
+
+Clone the project and read the core directive spec:
+
+```bash
+git clone https://github.com/SentientEddy/virgil.git
+cd virgil/specs
+cat virgil_core_directives.md
