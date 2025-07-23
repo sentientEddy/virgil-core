@@ -26,7 +26,7 @@ This project is not perfect, and it’s not complete. But if it resonates with y
 
 ## Core Documents
 
-- [`virgil-specification.md`](./docs/virgil-specification.md) — Design principles and operational logic
+- [`virgil-specification.md`](./docs/virgil-core-specification.md) — Design principles and operational logic
 - [`vigilant-core-directives.md`](./docs/vigilant-core-directives.md) — Immutable ethical mandates
 - [`trigger-framework.json`](./assets/trigger-framework.json) — Pattern recognition logic (WIP)
 - [`architecture-overview.pdf`](./assets/architecture-overview.pdf) — Visual systems design
