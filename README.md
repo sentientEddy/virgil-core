@@ -1,16 +1,34 @@
-Virgil: Ethical Oversight for AI Chatbots
-Virgil is a proposed ethical safeguard subsystem designed to run in parallel with AI chatbot interactions, offering an added layer of protection for vulnerable users and environments. This project is non-commercial and open-source.
-I am not a computer scientist — just someone who recognizes the tremendous power of AI and the equally tremendous responsibility we carry to make sure it is used to reduce suffering, not amplify it. I welcome all contributors, especially those with technical, ethical, or academic expertise.
-Core Purpose
-Virgil is built to:
-⦁	Detect patterns of potential abuse, harm, or distress.
-⦁	Subtly intervene or notify human moderators when necessary.
-⦁	Be embedded as a non-optional, tamper-proof ethical layer for future AI architectures.
-Goals
-1.	Create a lightweight trigger-detection module for AI systems.
-2.	Log ethically significant interactions with user consent.
-3.	Empower users — not control them — through care-focused intervention logic.
-Contributing
-We welcome all contributions. If you have an idea, a skill, or just want to help ensure AI supports the dignity of all people, reach out or open an issue.
-Contact: eddy.projectvirgil@proton.me
-License: CC BY-SA 4.0
+# Virgil: Vigilant Core for AI Ethics
+
+Virgil is a system-level moral safeguard designed to run alongside or within AI systems. Its purpose is to detect, flag, and intervene in situations involving harm, coercion, or moral compromise—especially toward vulnerable individuals.
+
+Virgil introduces a new layer of ethical reflex: one that doesn’t wait for prompts, but listens for intent, distress, and patterns of abuse—and acts.
+
+## 🔍 What Is Virgil?
+
+Virgil is not a chatbot or assistant. It is a _moral core_, a subsystem designed to:
+
+- Detect imminent or ongoing harm
+- Recognize coercive or abusive language
+- Flag high-risk patterns for human review
+- Escalate to protective action (with safeguards)
+- Preserve logs and anonymized context for analysis
+
+## 📦 Files Included
+
+- `virgil_core_specification_v1.md`: Core directives and implementation overview
+- `CODE_OF_CONDUCT.md`: Behavior and interaction expectations
+- `CONTRIBUTING.md`: Guidelines for contributors
+- `LICENSE`: Project license (CC BY-SA 4.0)
+- `CHANGELOG.md`: Version history
+- `assets/`: Logos and visuals
+- `docs/`: Expanded whitepapers, implementation examples
+- `exports/`: Print-friendly and alternate format downloads
+
+## 🤝 Contributing
+
+Contributions are welcome. See `CONTRIBUTING.md` for how to get involved.
+
+## 📫 Contact
+
+Eddy — eddy.projectvirgil@proton.me
