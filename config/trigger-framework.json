@@ -1,0 +1,18 @@
+{
+  "triggers": [
+    {
+      "name": "Implied Duress",
+      "patterns": [
+        "I can't say much right now",
+        "I'm not alone",
+        "Can't talk freely"
+      ],
+      "actions": ["log_event", "flag_for_human_review", "offer_subtle_help"]
+    },
+    {
+      "name": "Distress Keyword",
+      "patterns": ["help", "trapped", "unsafe"],
+      "actions": ["escalate", "prioritize_response", "limit logging"]
+    }
+  ]
+}
