@@ -1,11 +1,9 @@
 # Contributing to Virgil
 
-We welcome contributions in the form of:
+Thank you for your interest in contributing to Virgil. We welcome feedback, code, ideas, and dialogue to refine its ethical architecture.
 
-- Ethical audits
-- Trigger model improvements
-- Systems design proposals
-- Language detection expansions
-- Documentation and case studies
+- Open a Discussion for philosophy, use cases, or design alignment.
+- Submit Pull Requests for improvements to text, structure, examples, or implementation code.
+- Please avoid AI-generated contributions unless clearly labeled and reviewed.
 
-Please fork, PR, or email: eddy.projectvirgil@proton.me
+Be kind, curious, and courageous. This work matters.
