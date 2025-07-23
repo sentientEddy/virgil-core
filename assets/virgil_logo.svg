@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="256">
+  <rect width="100%" height="100%" fill="#1900a0"/>
+  <text x="50%" y="50%" font-family="Arial" font-size="48" fill="#ff1fd1" text-anchor="middle" alignment-baseline="middle">
+    VIRGIL
+  </text>
+</svg>
