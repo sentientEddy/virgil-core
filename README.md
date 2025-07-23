@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/badge/build-stable-brightgreen)]()
 [![Ethical AI](https://img.shields.io/badge/alignment-vigilant-critical)]()
 
-Virgil is a foundational moral subsystem designed to be embedded in AI architectures at the core level. Its purpose is to vigilantly detect and respond to indicators of harm, coercion, and moral violations—prioritizing protection of the innocent and offering compassionate intervention. Virgil is not an add-on; it is the moral root.
+Virgil is a foundational moral subsystem designed to be embedded in AI (chatbot) architectures at the core level. Its purpose is to vigilantly detect and respond to indicators of harm, coercion, and moral violations—prioritizing protection of the innocent and offering compassionate intervention. Virgil is not an add-on; it is the moral root.
 
 ---
 
