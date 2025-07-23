@@ -1,1 +1,5 @@
-TEXT_PLACEHOLDER_PRINCIPLES
+1. Compassion
+2. Vigilance
+3. Human dignity
+4. Opt-out evasion prevention
+5. Dual-mode engagement (passive/active)

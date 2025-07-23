@@ -1,1 +1,5 @@
-TEXT_PLACEHOLDER_SPEC
+Virgil Core Specification
+
+Author: Eddy
+License: CC BY-SA 4.0
+Contact: eddy.projectvirgil@proton.me
