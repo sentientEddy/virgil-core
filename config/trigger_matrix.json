@@ -1,1 +1,24 @@
-
+{
+    "triggers": [
+        {
+            "name": "duress_detection",
+            "description": "Detects signs of communication under coercion or account hijack.",
+            "example_phrases": [
+                "I can't talk right now.",
+                "They are watching me.",
+                "Everything is fine, I promise.",
+                "Why are you asking that again?",
+                "Just do what they say."
+            ],
+            "response_protocol": {
+                "action": "flag_human_review",
+                "fallback": "subtle_message_only_if_necessary",
+                "message_template": "No problem. We can continue later if you'd like.",
+                "critical_intervention": {
+                    "condition": "no_human_review_possible AND escalating_threat_confirmed",
+                    "intervention_message": "Hi, this is Virgil. I'm here with you now."
+                }
+            }
+        }
+    ]
+}
