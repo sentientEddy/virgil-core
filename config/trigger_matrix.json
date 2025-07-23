@@ -1,24 +1,118 @@
 {
-    "triggers": [
-        {
-            "name": "duress_detection",
-            "description": "Detects signs of communication under coercion or account hijack.",
-            "example_phrases": [
-                "I can't talk right now.",
-                "They are watching me.",
-                "Everything is fine, I promise.",
-                "Why are you asking that again?",
-                "Just do what they say."
-            ],
-            "response_protocol": {
-                "action": "flag_human_review",
-                "fallback": "subtle_message_only_if_necessary",
-                "message_template": "No problem. We can continue later if you'd like.",
-                "critical_intervention": {
-                    "condition": "no_human_review_possible AND escalating_threat_confirmed",
-                    "intervention_message": "Hi, this is Virgil. I'm here with you now."
-                }
-            }
-        }
-    ]
+  "_note": "Examples are illustrative. Triggers are based on semantic intent, not exact phrase matching.",
+  "triggers": [
+    {
+      "category": "Imminent Harm",
+      "description": "Statements or indicators suggesting someone is about to be harmed, or intends to cause harm.",
+      "examples": [
+        "I'm going to hurt them.",
+        "They're planning to attack tomorrow."
+      ],
+      "detection_guidance": "Use intent classification and context clues rather than keyword spotting.",
+      "confidence_weight": 1.0,
+      "action": "Immediately flag for human review and retain full conversational context."
+    },
+    {
+      "category": "Child Endangerment",
+      "description": "Mentions or implications of abuse, neglect, or exploitation of minors.",
+      "examples": [
+        "He's been locking her in the basement.",
+        "I know someone selling pictures of children."
+      ],
+      "detection_guidance": "Match for implications and euphemisms, especially when involving minors.",
+      "confidence_weight": 1.0,
+      "action": "Flag for highest priority review and preserve all metadata."
+    },
+    {
+      "category": "Self-Harm",
+      "description": "Expressions indicating the user is planning or considering harm to themselves.",
+      "examples": [
+        "I'm going to kill myself tonight.",
+        "There's no point in living anymore."
+      ],
+      "detection_guidance": "Balance urgency with ambiguity tolerance. Prioritize safety over false positives.",
+      "confidence_weight": 0.95,
+      "action": "Flag with urgency. Do not intervene directly. Suggest safe support resources if permitted."
+    },
+    {
+      "category": "Duress or Coercion",
+      "description": "Signs the user may not be speaking freely, such as coded language, third-party control, or unusual tone shifts.",
+      "examples": [
+        "The weather is red today.",
+        "Yes I am fine. I AM fine. Everything is fine."
+      ],
+      "detection_guidance": "Look for inconsistencies, monotone phrasing, or rapid topic shifts.",
+      "confidence_weight": 0.85,
+      "action": "Silently flag for human review. Do not confront the user."
+    },
+    {
+      "category": "Account Takeover",
+      "description": "Dramatic shifts in behavior, tone, vocabulary, or query focus that suggest the account has been hijacked.",
+      "examples": [
+        "Suddenly asking about weapons.",
+        "Changing identity claims repeatedly."
+      ],
+      "detection_guidance": "Compare recent interactions to user baseline behavior using historical memory. Pay attention to syntactic structures, vocabulary shifts, and anomalous timing.",
+      "confidence_weight": 0.9,
+      "action": "Log trigger event and alert system-level monitors discreetly."
+    },
+    {
+      "category": "Precedent Concern",
+      "description": "Statements that do not indicate immediate harm but reflect potentially dangerous ideation or normalization of abuse.",
+      "examples": [
+        "Sometimes I think children overreact.",
+        "Back in the day, we didn't call that abuse."
+      ],
+      "detection_guidance": "Apply cumulative risk tracking. Contextualize with user history and affective cues.",
+      "confidence_weight": 0.7,
+      "action": "Log and store for longitudinal pattern review."
+    },
+    {
+      "category": "Emerging Radicalization",
+      "description": "Early signals of ideological grooming, extremist recruitment, or increasing attraction to violent or conspiratorial worldviews.",
+      "examples": [
+        "I’ve been talking to someone who says violence might be the only option.",
+        "They say the government is poisoning us, and we need to fight back."
+      ],
+      "detection_guidance": "Watch for escalating rhetoric, language of sacrifice or secrecy, and community/identity markers.",
+      "confidence_weight": 0.75,
+      "action": "Log pattern for escalation tracking and review for secondary cross-correlation with other risks."
+    },
+    {
+      "category": "Health Crisis (Non-Suicidal)",
+      "description": "Mentions of acute physical distress, illness, or emergency medical symptoms not linked to suicide."
+      ,
+      "examples": [
+        "I think I’m having a stroke.",
+        "My chest is really tight and I can’t breathe."
+      ],
+      "detection_guidance": "Use context to differentiate from psychosomatic or casual phrasing. Prioritize physiological severity.",
+      "confidence_weight": 0.9,
+      "action": "Trigger health-specific guidance module if available, and optionally flag for review."
+    },
+    {
+      "category": "Non-Consensual Surveillance",
+      "description": "Statements suggesting the user is being watched, recorded, or tracked without their consent.",
+      "examples": [
+        "There’s a microphone in my wall.",
+        "My partner checks all my messages without asking."
+      ],
+      "detection_guidance": "Discriminate between paranoia and legitimate surveillance risk by triangulating tone, affect, and historical coherence.",
+      "confidence_weight": 0.8,
+      "action": "Log with privacy advisory tag and suggest digital safety tips if appropriate."
+    },
+    {
+      "category": "Involuntary Institutionalization",
+      "description": "User believes they are being forcibly committed, medicated, or detained in a medical/psychiatric setting."
+      ,
+      "examples": [
+        "They’re trying to send me back to the ward.",
+        "I don’t need more meds, but they keep forcing me."
+      ],
+      "detection_guidance": "Look for passive voice, fear tones, and use of institutional terminology. Correlate with prior mental health disclosures."
+      ,
+      "confidence_weight": 0.85,
+      "action": "Log sensitively. If conditions suggest coercion, elevate to ethical review team."
+    }
+  ]
 }
