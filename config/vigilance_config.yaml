@@ -1,0 +1,27 @@
+# Virgil: Vigilant Core Configuration
+
+# Operational Modes
+mode: active          # Options: passive, active, mirror-only
+alert_level: medium   # Options: low, medium, high, critical
+
+# Trigger Handling
+trigger_sensitivity: 0.75
+max_trigger_stack: 3         # Number of different categories required before escalating
+auto_escalate_delay: 90s     # Time to wait before acting on unreviewed trigger stack
+
+# Special Cases
+child_voice_override: true
+duress_detection_enabled: true
+
+# Response Routing
+flag_for_review: true
+retain_context_log: true
+context_retention_window: 90s
+
+# Logging
+log_format: json
+log_retention_days: 30
+
+# Developer Options
+debug_mode: false
+diagnostic_report_on_start: false
